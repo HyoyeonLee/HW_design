@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-module clock_gating_model(
+module DUT_gated_clock(
 	input i_clock,
 	input i_clock_en,
 	output o_clock
