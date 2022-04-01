@@ -44,7 +44,7 @@ initial begin
         $display("\t[Sync OFF] [%d]",$time);
 #50
         $display("FINISH! [%d]",$time);
-$finish;
+        $finish;
 end
 //o_clock = clock&&clock_en;
 wire o_clock = clock&&clock_en;
