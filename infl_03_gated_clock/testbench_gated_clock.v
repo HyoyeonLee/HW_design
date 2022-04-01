@@ -6,16 +6,16 @@ wire o_clock;
 always 
 	$5 clock=~clock;
 initial begin
-clock=0;
-clock_en=0;
+	clock=0;
+	clock_en=0;
 #100
-$display(“clock ON [%d]”,$time);
-clock_en=1;
+	$display(“clock ON [%d]”,$time);
+	clock_en=1;
 #100
-$display(“OFF [%d]”,$time);
-clock_en=0;
+	$display(“OFF [%d]”,$time);
+	clock_en=0;
 #100
-$display(“Finish!”);
+	$display(“Finish!”);
 $finish;
 end
   //connect DUT's i/o ports (DUT : instance of the module "gated_clock"
