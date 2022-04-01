@@ -5,9 +5,9 @@ always //loop
 	#5 clk =~clk;// invert every 5ns (T=10ns, f=100MHz)
 initial begin
 	clk=0; //start @ Low
-$display(“start [%d]”,$time);
+	$display(“start [%d]”,$time);
 #100 // operate for 100ns
-$display(“End [%d]”,$time);
-$finish;
+	$display(“End [%d]”,$time);
+	$finish;
 end 
 endmodule
