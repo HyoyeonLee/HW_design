@@ -42,7 +42,7 @@ always @(*)begin
         o_done=0;//to prevent latch(???)
         case(state_cur)
                 STATE_DONE:
-                        o_done=0;
+                        o_done=1;
         endcase
 end
 endmodule
