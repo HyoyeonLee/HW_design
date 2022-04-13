@@ -6,9 +6,9 @@ module DUT_FSM(
         output reg o_done
 );
 
-localparam  STATE_IDLE = 2b'00;
-localparam  STATE_RUN  = 2b'01;
-localparam  STATE_DONE = 2b'10;
+localparam  STATE_IDLE = 2'b00;
+localparam  STATE_RUN  = 2'b01;
+localparam  STATE_DONE = 2'b10;
 reg [1:0] state_cur;
 reg [1:0] state_next;
 
