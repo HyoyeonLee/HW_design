@@ -30,8 +30,11 @@ endmodule
 module DUT_full_adder_1bit(
         input a,b,cin,
         output sum,cout);
+/*
 assign sum  = (a^b)^cin;
 assign cout = (a&b) | (cin&(a^b));
+*/
+assign {cout,sum}=a+b+cin;
 endmodule
 
 module DUT_ripple_carry_full_adder_4bit(
