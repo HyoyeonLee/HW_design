@@ -13,7 +13,7 @@ end
 
 initial begin
         $display("start pmw");
-        #((pmw_period/2)*10) $display("end");
+        #((pmw_period*5) $display("end");
 $finish;
 end
 endmodule
